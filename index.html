@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="draw, lottery, raffle, ballot, JavaScript">
+    <title>Tirage au sort</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">  
+      <div class="checklist">
+        <div class="checkDiv">
+          <label class="checkbox" for="member1">
+            <input type="checkbox" id="member1" name="name" value="Alexis">
+            <span> Alexis</span>
+          </label>
+        </div>
+        <div class="checkDiv">
+          <label class="checkbox" for="member2">
+            <input type="checkbox" id="member2" name="name" value="Baptiste">
+            <span> Baptiste</span>
+          </label>
+        </div>
+        <div class="checkDiv">
+          <label class="checkbox" for="member3">
+            <input type="checkbox" id="member3" name="name" value="Jerome">
+            <span> Jerôme</span>
+          </label>
+        </div>
+        <div class="checkDiv">
+          <label class="checkbox" for="member4">
+            <input type="checkbox" id="member4" name="name" value="Julien">
+            <span> Julien</span>
+          </label>
+        </div>
+        <div class="checkDiv">
+          <label class="checkbox" for="member5">
+            <input type="checkbox" id="member5" name="name" value="Lea">
+            <span> Lea</span>
+          </label>
+        </div>
+        <div class="checkDiv">
+          <label class="checkbox" for="member6">
+            <input type="checkbox" id="member6" name="name" value="Mael">
+            <span> Mael</span>
+          </label>
+        </div>
+        <div class="checkDiv">
+          <label class="checkbox" for="member7">
+            <input type="checkbox" id="member7" name="name" value="Sabine">
+            <span> Sabine</span>
+          </label>
+        </div>
+        <div class="checkDiv">
+          <label class="checkbox" for="member8">
+            <input type="checkbox" id="member8" name="name" value="Samir">
+            <span> Samir</span>
+          </label>
+        </div>
+        <div class="checkDiv">
+          <label class="checkbox" for="member9">
+            <input type="checkbox" id="member9" name="name" value="Rosa">
+            <span> Rosa</span>
+          </label>
+        </div>
+        <div class="checkDiv">
+          <label class="checkbox" for="member10">
+            <input type="checkbox" id="member10" name="name" value="Thierry">
+            <span> Thierry</span>
+          </label>
+        </div>
+        <div class="checkDiv">
+          <label class="checkbox" for="member11">
+            <input type="checkbox" id="member11" name="name" value="Joker">
+            <span><img src="petiteCarte.png" alt=""></span>
+          </label>
+        </div>
+        <div class="selectionButtons">
+          <input class="selectAll" type="button" onclick='selectAll()' value="select all"/>
+        <input class="selectAll" type="button" onclick='deSelectAll()' value="unselect all"/>
+        </div>
+      </div>    
+      <button id="roll">
+        roll
+      </button>
+      <div class="screen">
+        <p id="prompt">
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
