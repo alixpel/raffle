@@ -9,38 +9,56 @@ body {
   box-shadow: -3px -2px 5px 0px rgba(138,103,9,0.75) inset, 3px 4px 5px 0px rgba(255, 252, 225, 0.836) inset;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   height: 99vh;
   margin: auto;
-  margin-top: 5rem;
   width: 95vw;
 }
 
 .checklist {
-  height: 56%;
-  margin-bottom: 4%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 45%;
+  justify-content: space-between;
+  min-width: 24vw;
 }
 
 .checkDiv {
+  border: 1px solid red;
   margin: 4%;
 }
 
 .selectionButtons {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  margin-top: 8%;
+  justify-content: space-between;
+  height: 12vh;
+}
+
+.rollDiv {
+  border: 1px solid red;
+}
+
+.screen {
+  height: 15%;
 }
 
 .checkbox {
-  display: inline-flex;
+  border: 1px solid red;
+  align-items: center;
+  display: flex;
   cursor: pointer;
-  position: relative;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .checkbox > span {
   color: #e0bc6b;
   font-family: sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 900;
   text-shadow: 0px -1px 0px rgba(0,0,0,0.8);
 }
@@ -55,11 +73,11 @@ body {
   cursor: pointer;
   border-radius: 4px;
   box-shadow: -1px -1px 2px 0px rgb(138 103 9 / 75%), 2px 1px 3px 0px rgb(255 252 225 / 84%);
-  height: 20px;
+  height: 25px;
   margin-right: 1rem;
   outline: none;
   transition-duration: 0.2s;
-  width: 20px;
+  width: 25px;
 }
 
 .checkbox > input:checked {
@@ -91,15 +109,13 @@ body {
   color: #8f7639;
   display: inline-block;
   font-family: sans-serif;
-  font-size: 0.9rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 0.2rem;
+  padding: 1rem 1.4rem;
   position: relative;
   outline: none;
   text-align: center;
-  text-decoration: none;
   text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
-  white-space: nowrap;
 }
 
 .selectAll:active {
@@ -118,17 +134,13 @@ body {
   color: #806831;
   display: inline-block;
   font-family: sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
-  height: 7%;
-  margin-bottom: 2rem;
   position: relative;
   outline: none;
+  padding: 1rem 1.4rem;
   text-align: center;
-  text-decoration: none;
   text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
-  width: 160px;
-  white-space: nowrap;
 }
 
 #roll:active {
@@ -136,37 +148,44 @@ body {
   transform: translateY(2px);
 }
 
-.screen {
-   height: 15%;
-}
-
 #prompt {
   color: #ecdaa7;
   font-family: sans-serif;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 900;
   text-shadow: 0px -1px 0px rgba(0,0,0,0.8);
 }
 
-// SMARTPHONE
-@media only screen and (min-device-width: 375px) and (max-device-width: 820px) {
+.smallCard {
+  display: none;
+}
+
+
+@media all and (min-device-width: 900px) {
   .container {
-    height: 90vh;
-    width: 95vw;
+    
   }
 
   .checklist {
-    height: 66%;
-    margin-bottom: 4%;
+    
   }
   
   .checkDiv {
-    height: 7%;
-    margin: 4%;
+    
   }
 
   .checkbox > span {
-    font-size: 2rem;
-    font-weight: 900;
+    
   }
+
+  .checkbox > input {
+    font-size: 20px;
+    height: 16px;
+    width: 16px;
+  }
+
+  .selectAll {
+    
+  }
+
 }
