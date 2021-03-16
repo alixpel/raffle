@@ -10,44 +10,44 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   height: 99vh;
   margin: auto;
   width: 95vw;
 }
 
 .checklist {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   height: 45%;
   justify-content: space-between;
+  margin-top: 4rem;
   min-width: 24vw;
 }
 
 .checkDiv {
-  border: 1px solid red;
   margin: 4%;
 }
 
+.buttonsAndResult {
+  margin-top: 4rem;
+}
+
 .selectionButtons {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 12vh;
-}
-
-.rollDiv {
-  border: 1px solid red;
+  height: 14rem;
+  margin-bottom: 4rem;
 }
 
 .screen {
-  height: 15%;
+  height: 12rem;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .checkbox {
-  border: 1px solid red;
   align-items: center;
   display: flex;
   cursor: pointer;
@@ -136,11 +136,13 @@ body {
   font-family: sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
+  height: 7rem;
   position: relative;
   outline: none;
   padding: 1rem 1.4rem;
   text-align: center;
   text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+  width: 100%;
 }
 
 #roll:active {
@@ -163,11 +165,13 @@ body {
 
 @media all and (min-device-width: 900px) {
   .container {
-    
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .checklist {
-    
+    height: auto;
+    min-width: 16vw;
   }
   
   .checkDiv {
@@ -175,7 +179,7 @@ body {
   }
 
   .checkbox > span {
-    
+    font-size: 1.2rem;
   }
 
   .checkbox > input {
@@ -184,8 +188,26 @@ body {
     width: 16px;
   }
 
+  .buttonsAndResult {
+    height: 50%;
+    width: 24%;
+  }
+
+  .selectionButtons {
+    height: 8rem;
+  }
+
   .selectAll {
-    
+    font-size: 1rem;
+  }
+
+  #roll {
+    font-size: 1.2rem;
+    height: 5rem;
+  }
+
+  .screen {
+    height: auto;
   }
 
 }
