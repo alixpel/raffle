@@ -73,20 +73,25 @@
         <div class="checkDiv">
           <label class="checkbox" for="member11">
             <input type="checkbox" id="member11" name="name" value="Joker">
-            <span><img src="petiteCarte.png" alt=""></span>
+            <span class="smallCard"><img src="moyenneCarte.png" alt=""></span>
+            <span class="mediumCard"><img src="moyenneCarte.png" alt=""></span>
           </label>
         </div>
-        <div class="selectionButtons">
-          <input class="selectAll" type="button" onclick='selectAll()' value="select all"/>
-        <input class="selectAll" type="button" onclick='deSelectAll()' value="unselect all"/>
+      </div>
+      <div class="buttonsAndResult">
+        <div class="rollDiv">
+          <div class="selectionButtons">
+            <input class="selectAll" type="button" onclick='selectAll()' value="select all"/>
+            <input class="selectAll" type="button" onclick='deSelectAll()' value="unselect all"/>
+          </div>
+          <button id="roll">
+            roll
+          </button>
         </div>
-      </div>    
-      <button id="roll">
-        roll
-      </button>
-      <div class="screen">
-        <p id="prompt">
-        </p>
+        <div class="screen">
+          <p id="prompt">
+          </p>
+        </div>
       </div>
     </div>
 
