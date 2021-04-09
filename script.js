@@ -28,10 +28,10 @@ for(var i=0; i<candidates.length; i++){
 if(candidates[i].type=='checkbox' && candidates[i].checked==true)
 selectedCandidates+=candidates[i].value+" ";
 }
-//console.log(selectedCandidates);
 // create an array to be able to use Math.random :
 var tableOfCandidates = selectedCandidates.split(' ');
-//console.log(tableOfCandidates);
+// remove the ' ' (last item of the array) :
+tableOfCandidates.pop();
 // selection :
 var rand = Math.floor(Math.random() * tableOfCandidates.length);
 var winner = tableOfCandidates[rand];
